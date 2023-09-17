@@ -1,12 +1,13 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// TC----->O(n),   SC---> O(n)
 bool isBalanced(string s)
 {
     stack<char> c;
     for (int i = 0; i < s.size(); i++)
     {
-        char ch = s[i]; // current character
+        char ch = s[i]; // current character store
         if (ch == '[' || ch == '{' || ch == '(')
         {
             c.push(ch);
